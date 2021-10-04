@@ -20,7 +20,7 @@ int	main(int ac, char **av)
 	pid_t	pid;
 
 	if (ac != 3)
-		herror("Inavlid arguments.");
+		herror("Invalid arguments.");
 	pid = atoi(av[1]);
 	if (pid < 0)
 		herror("Invalid pid.");
