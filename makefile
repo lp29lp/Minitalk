@@ -23,13 +23,13 @@ CC = clang
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -f
 
-all: server client
+all: comp server client
 
-server: comp
+server:
 	@$(CC) $(CFLAGS) ./server.o $(PRINTF) $(LIBFT) -o server
 	@echo Server done.
 
-client: comp
+client:
 	@$(CC) $(CFLAGS) ./client.o $(PRINTF) $(LIBFT) -o client
 	@echo Client done.
 
